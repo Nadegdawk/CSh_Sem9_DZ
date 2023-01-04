@@ -11,7 +11,7 @@ void Main()
 			case "Task64": Task64(); break;
 			case "Task66": Task66(); break;
 			case "Task68": Task68(); break;
-            case "exit": isWorking = false; break;
+			case "exit": isWorking = false; break;
 		}
 		Console.WriteLine();
 	}
@@ -26,7 +26,7 @@ void Task64()
 {
 	Console.WriteLine("Output of numbers from N to 1");
 	int n = ReadInt("N");
-    PrintFromUntil(n);
+	PrintFromUntil(n);
 }
 
 void Task66()
@@ -39,10 +39,10 @@ void Task66()
     Console.WriteLine("The sum of the numbers from M to N");
 	int m = ReadInt("M");
 	int n = ReadInt("N");
-    int sum = 0;
-    if (m <= n) sum = SumDigital(m, n);
-    else sum = SumDigital(n, m);
-    Console.WriteLine($"Sum: {sum}");
+	int sum = 0;
+	if (m <= n) sum = SumDigital(m, n);
+	else sum = SumDigital(n, m);
+	Console.WriteLine($"Sum: {sum}");
 }
 
 void Task68()
@@ -55,8 +55,8 @@ void Task68()
 	Console.WriteLine("Ackermann Function A(m,n)");
 	int m = ReadInt("m");
 	int n = ReadInt("n");
-    int a = FunctionAckermann(m, n);
-    Console.WriteLine($"A({m},{n}) = {a}");
+	int a = FunctionAckermann(m, n);
+	Console.WriteLine($"A({m},{n}) = {a}");
 }
 
 int ReadInt(string argumentName)            //ввод данных пользователем
